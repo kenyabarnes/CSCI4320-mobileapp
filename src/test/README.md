@@ -1,0 +1,1 @@
+This folder is used to hold our tests for our main application. this folder should mirror directory by directory the /main folder.
