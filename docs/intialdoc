@@ -1,0 +1,15 @@
+Project Version 1
+Mobile Application to record health metrics for a user and report it to a doctor. 
+
+source points: 
+* IOT RFID for authentication
+* IOT for pulse heart rate 
+* Track Steps
+* Journal
+
+Requirements:
+* Mesh discovery for IOT Devices
+* Mobile UI
+* Web UI
+* Sends Alerts or push notifications
+* User Management 
