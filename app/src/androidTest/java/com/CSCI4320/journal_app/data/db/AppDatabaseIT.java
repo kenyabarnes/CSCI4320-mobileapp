@@ -1,6 +1,5 @@
 package com.CSCI4320.journal_app.data.db;
 
-import androidx.room.Room;
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
 
 import com.CSCI4320.journal_app.data.model.User;
@@ -19,7 +18,7 @@ public class AppDatabaseIT {
 
     @Before
     public void setup() {
-        db = Room.databaseBuilder(getContext(), AppDatabase.class, "test-database").build();
+        db = AppDatabase.getAppDatabase(getContext());
     }
 
     @Test
