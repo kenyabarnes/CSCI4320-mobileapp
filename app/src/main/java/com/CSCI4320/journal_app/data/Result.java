@@ -1,4 +1,4 @@
-package com.example.journal_app.data;
+package com.CSCI4320.journal_app.data;
 
 /**
  * A generic class that holds a result success w/ data or an error exception.

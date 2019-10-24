@@ -1,4 +1,4 @@
-package com.example.journal_app;
+package com.CSCI4320.journal_app;
 
 import org.junit.Test;
 

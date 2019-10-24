@@ -1,4 +1,4 @@
-package com.example.journal_app.ui.login;
+package com.CSCI4320.journal_app.ui.login;
 
 import android.app.Activity;
 
@@ -22,9 +22,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.journal_app.R;
-import com.example.journal_app.ui.login.LoginViewModel;
-import com.example.journal_app.ui.login.LoginViewModelFactory;
+import com.CSCI4320.journal_app.R;
 
 public class LoginActivity extends AppCompatActivity {
 
