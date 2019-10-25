@@ -1,6 +1,6 @@
-package com.example.journal_app.data;
+package com.CSCI4320.journal_app.data;
 
-import com.example.journal_app.data.model.LoggedInUser;
+import com.CSCI4320.journal_app.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

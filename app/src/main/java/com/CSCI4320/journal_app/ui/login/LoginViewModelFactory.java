@@ -1,11 +1,11 @@
-package com.example.journal_app.ui.login;
+package com.CSCI4320.journal_app.ui.login;
 
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.annotation.NonNull;
 
-import com.example.journal_app.data.LoginDataSource;
-import com.example.journal_app.data.LoginRepository;
+import com.CSCI4320.journal_app.data.LoginDataSource;
+import com.CSCI4320.journal_app.data.LoginRepository;
 
 /**
  * ViewModel provider factory to instantiate LoginViewModel.
