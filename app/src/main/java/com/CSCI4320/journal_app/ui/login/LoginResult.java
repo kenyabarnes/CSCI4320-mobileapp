@@ -1,4 +1,4 @@
-package com.CSCI4320.journal_app.ui.login;
+package com.example.login.ui.login;
 
 import androidx.annotation.Nullable;
 
