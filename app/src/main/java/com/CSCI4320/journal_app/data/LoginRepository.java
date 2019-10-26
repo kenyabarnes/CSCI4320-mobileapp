@@ -1,6 +1,6 @@
-package com.CSCI4320.journal_app.data;
+package com.example.login.data;
 
-import com.CSCI4320.journal_app.data.model.LoggedInUser;
+import com.example.login.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and
@@ -45,7 +45,7 @@ public class LoginRepository {
 
     public Result<LoggedInUser> login(String username, String password) {
         // handle login
-        Result<LoggedInUser> result = dataSource.login(username, password);
+        Result<LoggedInUser> result = dataSource.login(password);
         if (result instanceof Result.Success) {
             setLoggedInUser(((Result.Success<LoggedInUser>) result).getData());
         }
