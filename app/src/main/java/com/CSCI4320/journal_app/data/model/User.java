@@ -1,4 +1,4 @@
-package com.CSCI4320.journal_app.data.model;
+package com.example.login.data.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -17,4 +17,9 @@ public class User {
     @ColumnInfo(name = "last_name")
     public String lastName;
 
+    @ColumnInfo(name = "username")
+    public String username;
+
+    @ColumnInfo(name = "password")
+    public String password;
 }

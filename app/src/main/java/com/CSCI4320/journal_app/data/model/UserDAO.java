@@ -1,4 +1,4 @@
-package com.CSCI4320.journal_app.data.model;
+package com.example.login.data.model;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -11,7 +11,10 @@ import java.util.List;
 public interface UserDAO {
 
     @Query("SELECT * FROM User")
-    List<User> getAll();
+    User getUsername();
+
+    @Query("SELECT * FROM User")
+    User getPassword();
 
     @Query("SELECT * FROM User WHERE id LIKE :userId")
     User getUser(int userId);

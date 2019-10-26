@@ -1,20 +1,20 @@
-package com.CSCI4320.journal_app.data.model;
+package com.example.login.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository
  */
 public class LoggedInUser {
 
-    private String userId;
+    private String username;
     private String displayName;
 
-    public LoggedInUser(String userId, String displayName) {
-        this.userId = userId;
+    public LoggedInUser(String username, String displayName) {
+        this.username = username;
         this.displayName = displayName;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getUsername() {
+        return username;
     }
 
     public String getDisplayName() {
