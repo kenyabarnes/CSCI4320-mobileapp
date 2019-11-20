@@ -9,78 +9,72 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
-        <!--    This will be a custom action bar next push    -->
-        <!--<include
-            android:id="@+id/devi_acti_bar"
-            layout="@layout/action_bar_1"
-            />-->
+        <!--  Menu/Activity Bar  -->
+        <include
+            layout="@layout/action_bar"
+            android:id="@+id/devices_action_bar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+        </include>
 
         <!--    Dynamic buttons next push    -->
         <!-- This holds the device buttons -->
         <!-- Start Button Section -->
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorPrimary"
-            >
-            <LinearLayout
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/devices_addbutton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Add"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Devices 1"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="25dp"
-                    android:background="@color/colorPrimaryDark"
-                    />
+            <EditText
+                android:id="@+id/devices_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type Device Name Here" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Devices 2"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="25dp"
-                    android:background="@color/colorPrimaryDark"
-                    />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Devices 3"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="25dp"
-                    android:background="@color/colorPrimaryDark"
-                    />
+            <Button
+                android:id="@+id/devices_hm_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Heart Monitor"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/devices_gl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Glucose Levels"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/devices_mc_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicine Cabinet"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/devices_bp_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood Pressure"
+                android:textSize="25sp" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Devices 4"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="25dp"
-                    android:background="@color/colorPrimaryDark"
-                    />
+            <ListView
+                android:id="@+id/devices_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Devices 5"
-                    android:textColor="@color/colorAccent"
-                    android:textSize="25dp"
-                    android:background="@color/colorPrimaryDark"
-                    />
-
-            </LinearLayout>
-
-        </ScrollView>
+        </LinearLayout>
 
     </LinearLayout>
 
