@@ -1,18 +1,13 @@
 package com.CSCI4320.journal_app.data.model;
 
-import com.CSCI4320.journal_app.data.model.DeviceLog;
-import com.CSCI4320.journal_app.data.model.DeviceLogDAO;
 import java.text.SimpleDateFormat;
 //import java.time.LocalDate;
 //import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-public class Logger {
-    //I feel like some of this should be private, but we can discuss that later.
-    private int deviceId;
-    private int userId;
-    public String message;
-    public String date;
+public class Logger{
+    private int DID;
+    private int UID;
 
 
     /*
@@ -22,8 +17,8 @@ public class Logger {
     Logger(int UID, int DID){
         validityCheck();
         securityCheck();
-        deviceId = DID;
-        userId = UID;
+        this.DID = DID;
+        this.UID = UID;
     }
     /*
     TODO: make method to confirm device and user exist.
@@ -52,10 +47,6 @@ public class Logger {
                 "you may be able to modify and view other user's device logs at this time.\n" +
                 "So please behave until this is covered.\n \n");
     }
-    /*
-    Set current date and time to ISO 8601 compatible format
-    May make separate class for everyone to call idk
-     */
     public String currentDateTime() {
         //commented out example code due to needing api 26.
         //uncomment this and the imports if desired to reimplement
@@ -69,24 +60,31 @@ public class Logger {
 
         return simpleDateFormat.format(new Date());
     }
-    /*
-    This is to be as simplistic for devices as possible.
-    example code for how I desire implementation
 
-    Logger log = new Logger(UserId, deviceId);
-    log.log(heartRate());
-    Where basically the heartRate method returns a value that is parsed to string then logged
+    public int getDID() {
+        return DID;
+    }
 
-    Im not entirely sure what exactly I should be handing this data off to. As in, once the
-    data is in the object, should it then give the string, user id, deviceid and whatnot to the
-    database methods?
-    Whatever. I wrote entirely too many comments here to be a normal human
+    public void setDID(int DID) {
+        this.DID = DID;
+    }
 
- */
-    //public void log(String input){
-    //   DeviceLog logThis = new DeviceLog(deviceId,userId,currentDateTime(),input);
-    //}
+    public int getUID() {
+        return UID;
+    }
+
+    public void setUID(int UID) {
+        this.UID = UID;
+    }
+
+    public void log(String input)
+    {
+        DeviceLog toLog = new DeviceLog();
+        toLog.deviceId = DID;
+        toLog.userId = UID;
+        toLog.date = currentDateTime();
+        toLog.message = input;
 
 
-
+    }
 }
