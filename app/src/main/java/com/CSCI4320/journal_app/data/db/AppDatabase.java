@@ -9,6 +9,7 @@ import androidx.room.RoomDatabase;
 import com.CSCI4320.journal_app.data.model.Device;
 import com.CSCI4320.journal_app.data.model.DeviceDAO;
 import com.CSCI4320.journal_app.data.model.DeviceLog;
+import com.CSCI4320.journal_app.data.model.DeviceLogDAO;
 import com.CSCI4320.journal_app.data.model.Journal;
 import com.CSCI4320.journal_app.data.model.JournalDAO;
 import com.CSCI4320.journal_app.data.model.JournalEntry;
@@ -37,5 +38,6 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract DeviceDAO deviceDAO();
     public abstract JournalDAO journalDAO();
     public abstract JournalEntryDAO journalEntryDAO();
+    public abstract DeviceLogDAO deviceLogDAO();
 
 }

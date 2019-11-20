@@ -1,5 +1,7 @@
 package com.CSCI4320.journal_app.data.model;
 
+import com.CSCI4320.journal_app.data.db.AppDatabase;
+
 import java.text.SimpleDateFormat;
 //import java.time.LocalDate;
 //import java.time.format.DateTimeFormatter;
@@ -8,6 +10,7 @@ import java.util.Date;
 public class Logger{
     private int DID;
     private int UID;
+    AppDatabase db;
 
 
     /*
@@ -84,6 +87,7 @@ public class Logger{
         toLog.userId = UID;
         toLog.date = currentDateTime();
         toLog.message = input;
+        db.deviceLogDAO().insert(toLog);
 
 
     }
