@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--  Devices  -->
+    <item
+        android:id="@+id/devices"
+        android:title="@string/devices"
+        app:showAsAction="never"> <!--sets if the popup menu is visible always or on click-->
+    </item>
+
+    <!--  Journals  -->
+    <item
+        android:id="@+id/journals"
+        android:title="@string/journals"
+        app:showAsAction="never"> <!--sets if the popup menu is visible always or on click-->
+    </item>
+
+    <!--  Profile  -->
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        app:showAsAction="never"> <!--sets if the popup menu is visible always or on click-->
+    </item>
+
+    <!--  Settings  -->
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        app:showAsAction="never"> <!--sets if the popup menu is visible always or on click-->
+    </item>
+
+    <!--  Journals  -->
+    <item
+        android:id="@+id/log_out"
+        android:title="@string/log_out"
+        app:showAsAction="never"> <!--sets if the popup menu is visible always or on click-->
+    </item>
+
+</menu>
